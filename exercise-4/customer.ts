@@ -2,10 +2,13 @@ export class Customer{
 
     private fName: string;
     private lName: string;
+    private age: number;
 
-    constructor(fName:string, lName:string){
+
+    constructor(fName:string, lName:string, age:number){
         this.fName = fName;
         this.lName = lName;
+        this.age = age;
     }
 
     /**
@@ -15,9 +18,13 @@ export class Customer{
         console.log(`Hello ${this.fName} ${this.lName}`);
     }
 
+    getAge() {
+        console.log(`Age is ${this.age}`)
+    }
+
 }
 
-let customer = new Customer("John", "Smith");
+let customer = new Customer("John", "Smith", 25);
 customer.greeter();
 
 
