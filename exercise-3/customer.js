@@ -1,15 +1,15 @@
-var CustomerTwo = /** @class */ (function () {
-    function CustomerTwo(fName, lName) {
+var Customer = /** @class */ (function () {
+    function Customer(fName, lName) {
         this.fName = fName;
         this.lName = lName;
     }
     /**
      * greeter
      */
-    CustomerTwo.prototype.greeter = function () {
+    Customer.prototype.greeter = function () {
         console.log("Hello ".concat(this.fName, " ").concat(this.lName));
     };
-    return CustomerTwo;
+    return Customer;
 }());
-var customerTwo = new CustomerTwo("John", "Smith");
-customerTwo.greeter();
+var customerInfo = new Customer("John", "Smith");
+customerInfo.greeter();

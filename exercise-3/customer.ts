@@ -1,4 +1,4 @@
-class CustomerTwo{
+class Customer{
 
     private fName: string;
     private lName: string;
@@ -17,7 +17,7 @@ class CustomerTwo{
 
 }
 
-let customerTwo = new CustomerTwo("John", "Smith");
-customerTwo.greeter();
+let customerInfo = new Customer("John", "Smith");
+customerInfo.greeter();
 
 
